@@ -1,8 +1,5 @@
 # Thamrin Connection Monitoring
 
-<div align="center" width="100%">
-    <img src="./public/thamrin.svg" width="128" alt="" />
-</div>
 
 Connection Monitoring for Thamrin 
 
@@ -19,37 +16,12 @@ Requirements:
 ```bash
 # Update your npm to the latest version
 npm install npm -g
-
-mkdir Thamrin-Connection-Monitoring
-cd
-git clone https://github.com/I-Fun/uptime-kuma.git .
-npm run setup
-
-# Option 1. Try it
-node server/server.js
-
-# (Recommended) Option 2. Run in background using PM2
-# Install PM2 if you don't have it: 
+#install pm2 & pm2-logrotate dependency :
 npm install pm2 -g && pm2 install pm2-logrotate
 
-# Start Server
-pm2 start server/server.js --name thamrin-monitoring
+#go to the root folder of your web server eg. /var/www
+#and just run this script :
+curl -sSL https://raw.githubusercontent.com/I-Fun/Thamrin-Connection-Monitoring/main/setup.sh | bash
 
-```
-Thamrin Connection Monitoring is now running on http://localhost:3001
-
-More useful PM2 Commands
-
-```bash
-# If you want to see the current console output
-pm2 monit
-
-# If you want to add it to startup
-pm2 save && pm2 startup
-
-## 🆙 How to Update
-
-Please read:
-
-https://github.com/louislam/uptime-kuma/wiki/%F0%9F%86%99-How-to-Update
-
+# Thamrin Connection Monitoring installed
+you can open that on http://localhost:5001
