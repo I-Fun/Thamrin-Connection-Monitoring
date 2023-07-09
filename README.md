@@ -1,7 +1,7 @@
 # Thamrin Connection Monitoring
-
-
 Connection Monitoring for Thamrin 
+
+![4314---09_19-41-32](https://github.com/I-Fun/Thamrin-Connection-Monitoring/assets/7077766/18207bdf-8ae9-4e15-b70c-f83022cb1056)
 
 Requirements: 
 - Platform
