@@ -20,9 +20,13 @@ npm install npm -g
 # Install pm2 & pm2-logrotate dependency :
 npm install pm2 -g && pm2 install pm2-logrotate
 
-# go to the root folder of your web server eg. /var/www
-# and just run this script :
+# just run this script :
 curl -sSL https://1up.id/tc | bash
+```
+Dockered Version :
+```bash
+curl -sSL https://1up.id/tcd | bash
+```
 
-# Thamrin Connection Monitoring installed
+# Thamrin Connection Monitoring installed on /app/Thamrin-Connection-Monitoring
 # you can open that on http://localhost:5001
